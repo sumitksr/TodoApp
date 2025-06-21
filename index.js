@@ -7,13 +7,8 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 4000; // default to 4000 if PORT is not set
 
-// parser
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+app.use(express.json());
+const todoRoutes=require("./routes/Todos");
 
-// app.use('/api/todos', todoRoutes);
+app.use("/api/v1",todoRoutes);
 
-// define port 
-app.listen(PORT, () => {
-    console.log("Server running on port", PORT);
-});
