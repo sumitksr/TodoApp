@@ -1,16 +1,16 @@
-# Todo API
+# ✅ Todo API
 
 This is a simple Todo API built with Node.js, Express, and MongoDB, designed to be the backend for a full-stack application.
 
-**Note:** The frontend for this application is currently under development.
+**Note:** The frontend for this application is currently under development. 🚧
 
-## Features
+## ✨ Features
 
-- Create, read, update, and delete todos
-- Uses MongoDB for data storage
-- Simple and easy-to-use RESTful API
+- ✅ Create, read, update, and delete todos
+- 💾 Uses MongoDB for data storage
+- 🚀 Simple and easy-to-use RESTful API
 
-## How to Run on Your System
+## 🛠️ How to Run on Your System
 
 Follow these steps to get the backend server running on your local machine.
 
@@ -19,7 +19,7 @@ Follow these steps to get the backend server running on your local machine.
 - **Node.js**: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
 - **MongoDB**: This project requires a MongoDB database. You can use a local installation or a cloud service like MongoDB Atlas.
 
-### Installation & Setup
+### ⚙️ Installation & Setup
 
 1.  **Clone the Repository**
     Open your terminal and run this command:
@@ -51,7 +51,7 @@ Follow these steps to get the backend server running on your local machine.
     MONGODB_URI="your_mongodb_connection_string"
     ```
 
-### Running the Server
+### 🏃 Running the Server
 
 -   **For production:**
     ```sh
@@ -64,7 +64,7 @@ Follow these steps to get the backend server running on your local machine.
 
 Once running, the API will be available at `http://localhost:3000`.
 
-## API Endpoints
+## 📡 API Endpoints
 
 All endpoints are prefixed with `/api/v1`.
 
