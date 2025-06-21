@@ -1,25 +1,15 @@
-// making instance 
+// Import mongoose
 const mongoose = require("mongoose");
 
-// env main jo bhi define kara hai vo sb process main cashal jaeyga
-reqire("dontenv").config();
-// function for  connection from db
+// Load environment variables
+require("dotenv").config();
+
+// Define connection function
 const dbConnect = () => {
-  mongoose
-    .connect(process.env.DATABASE_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log("hogya bhai ladoo bato");
-    })
-    .catch((error) => {
-      console.log("laddo fek do");
-      alert(error.message);
-      process.exit(1);
-    });
+  mongoose.connect(process.env.DATABASE_URL)
+    .then(() => console.log("MongoDB connected"))
+    .catch((err) => console.log("Connection error:", err));
 };
 
-// export krna
-
-module.exports=dbConnect;
+// Export the function
+module.exports = dbConnect;

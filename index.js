@@ -15,3 +15,15 @@ app.listen(PORT ,()=>{
     console.log(`server started sycessfully at ${PORT}`)
 });
 
+// connect to the db
+const dbConnect = require("./config/database");
+dbConnect();
+
+
+
+// deafult route 
+
+app.get("/",(req,res)=>{
+    res.send(`<h1>this is homepage</h1>`)
+})
+
