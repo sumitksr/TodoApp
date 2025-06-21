@@ -1,14 +1,19 @@
-// initalising  express 
-const express=require('express');
+// initializing express 
+const express = require('express');
 const app = express();
 
-reqire("dontenv").config();
+// ✅ Typo fix: 'dontenv' → 'dotenv'
+require("dotenv").config();
 
+const PORT = process.env.PORT || 4000; // default to 4000 if PORT is not set
+
+// parser
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-// defineing port 
-app.listen(process.env.PORT,()=>{
-    console.log("helo world")
-})
+// app.use('/api/todos', todoRoutes);
 
+// define port 
+app.listen(PORT, () => {
+    console.log("Server running on port", PORT);
+});
