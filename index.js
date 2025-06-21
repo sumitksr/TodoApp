@@ -22,7 +22,7 @@ dbConnect();
 
 
 // deafult route 
-
+// ui pe dikhane ke liye
 app.get("/",(req,res)=>{
     res.send(`<h1>this is homepage</h1>`)
 })
